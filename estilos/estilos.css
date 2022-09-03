@@ -83,7 +83,7 @@ li:hover {
 /*inicio*/
 
 .gridInicio{
-    height: 100%;
+    
     display: grid;
     text-align: center;
     align-items: start;
@@ -110,7 +110,7 @@ li:hover {
    background-color: white;
    margin: 1rem;
    padding-top: 1rem;
-   padding-bottom: 1rem;
+   padding-bottom: 0.4rem;
    text-align: center;
    border-radius: 1.5rem;
    box-shadow: 1rem silver;
@@ -127,7 +127,7 @@ li:hover {
     font-family: 'Open Sans', sans-serif;
     color: white;
     text-align: center;
-    padding: 1.5rem;
+    padding: 0.5rem;
     
     
 }
@@ -142,16 +142,19 @@ li:hover {
     padding: 1.5rem;
 }
 
+.titulo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'open Sans', sans-serif;
+}
+
 .parrafoInicio{
    color: black;
-   font-weight: bold;
-   font-size: 1rem;
+   font-size: 1.3rem;
    font-family: 'open Sans', sans-serif;
-   text-align: center;
-   padding: 1rem;
-   margin: 1rem;
-   border: 0.1rem solid black; 
+   text-align: left;
    background-color: white;
+   padding: 1rem;
 }
 
 .imagenRecomendacion{
@@ -162,7 +165,14 @@ li:hover {
 .imagenPromo{
     width: 100%;
     border: 0.3rem solid rgb(186, 187, 197);
-    margin-top: 2.5rem;
+    margin-top: 1rem;
+}
+
+.oferta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1rem;
 }
 
 /*footer*/
