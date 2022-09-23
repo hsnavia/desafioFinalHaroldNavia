@@ -1,0 +1,46 @@
+footer{
+    width: 100%;
+    background-color: rgb(236, 151, 71);
+    text-align: center;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.atencion{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'open Sans', sans-serif;
+}
+
+.seguinos{
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+}
+
+.redes{
+    padding: 0.5rem 1rem;
+}
+
+:hover.redes{
+    scale: 1.1;
+}
+
+@media(min-width: 768px){
+    footer{
+        padding: 1rem 0rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding-right: 5rem;
+    }
+
+    .atencion{
+        padding-right: 4rem;
+    }
+    
+}

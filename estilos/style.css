@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.2rem solid rgb(101, 89, 104);
+  background-color: rgb(236, 151, 71);
+}
+
+.logoPrincipal {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoVentas {
+  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding-top: 1rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Chicle", cursive;
+  color: rgb(231, 96, 18);
+  font-weight: Bold;
+}
+
+nav {
+  text-align: center;
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  word-spacing: 1rem;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+li:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 500px) {
+  .logoPrincipal {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media (min-width: 500px) and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+}
+@media (min-width: 500px) and (min-width: 990px) {
+  header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .logoVentas {
+    font-size: 4rem;
+  }
+  .logo {
+    font-size: 4rem;
+    padding-right: 3rem;
+  }
+  li {
+    font-size: 2rem;
+  }
+}
+.gridInicio {
+  display: grid;
+  text-align: center;
+  align-items: start;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "principal" "secundaria";
+  gap: 2rem;
+  background-color: rgb(67, 196, 116);
+}
+
+.seccionSecundaria {
+  display: flex;
+  flex-direction: column;
+  grid-area: secundaria;
+  width: 100%;
+  background-image: url(../fondo.png);
+  height: 100%;
+  width: 100%;
+  background-color: rgb(245, 94, 80);
+  padding-bottom: 1rem;
+}
+
+.promociones {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+}
+
+.promociones:hover {
+  transform: scale(1.03);
+}
+
+.noticiaPrincipal {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.noticiaSecundaria {
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: rgb(211, 34, 18);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "open Sans", sans-serif;
+}
+
+.parrafoInicio {
+  color: black;
+  font-size: 1.3rem;
+  font-family: "open Sans", sans-serif;
+  text-align: left;
+  background-color: white;
+  padding: 1rem;
+}
+
+.imagenRecomendacion {
+  width: 100%;
+  text-align: center;
+}
+
+.imagenPromo {
+  width: 100%;
+  border: 0.3rem solid rgb(186, 187, 197);
+  margin-top: 1rem;
+}
+
+.oferta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+@media (min-width: 500px) {
+  .noticiaPrincipal {
+    font-size: 2.5rem;
+  }
+  .noticiaSecundaria {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 500px) and (min-width: 768px) {
+  .seccionSecundaria {
+    display: flex;
+    flex-direction: row;
+  }
+  .noticiaSecundaria {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 500px) and (min-width: 990px) {
+  .noticiaPrincipal {
+    font-size: 3rem;
+  }
+  .noticiaSecundaria {
+    font-size: 2.5rem;
+  }
+  .parrafoInicio {
+    font-size: 1.5rem;
+  }
+}
+.servicios {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.castilloTobogan {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: castillo;
+}
+
+.metegol {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: metegol;
+}
+
+.pool {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: pool;
+}
+
+.inflable {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: inflable;
+}
+
+.camaElastica {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: cama;
+}
+
+.gacebo {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: gacebo;
+}
+
+.pinPon {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: pinPon;
+}
+
+.imagenServicios {
+  width: 100%;
+  align-items: center;
+}
+
+.parrafoServicios {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 0rem;
+}
+
+@media (min-width: 500px) {
+  .servicios {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "castillo  metegol" "pool  inflable" "cama  gacebo" "pinPon  ..";
+  }
+}
+@media (min-width: 500px) and (min-width: 768px) {
+  .servicios {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "castillo metegol pool" "inflable cama gacebo" "pinPon .... ----";
+  }
+}
+@media (min-width: 500px) and (min-width: 1024px) {
+  .servicios {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "castillo metegol pool inflable" "cama gacebo pinPon ...";
+  }
+}
+.productos {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panHamburguesa {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: panHam;
+}
+
+.panPancho {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: panPan;
+}
+
+.patyClasico {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: patyCl;
+}
+
+.patyExpres {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: patyEx;
+}
+
+.salchichaSwift {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: salSwi;
+}
+
+.hamburguesaSwift {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: hamSwi;
+}
+
+.panLactal {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: panLac;
+}
+
+.mayonesa {
+  background-color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem silver;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  grid-area: mayone;
+}
+
+.imagenProductos {
+  width: 100%;
+  align-items: center;
+}
+
+.parrafoProductos {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 0rem;
+}
+
+@media (min-width: 500px) {
+  .productos {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "panHam panPan" "patyCl patyEx" "salSwi hamSwi" "panLac mayone";
+  }
+}
+@media (min-width: 500px) and (min-width: 768px) {
+  .productos {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "panHam panPan patyCl" "patyEx salSwi hamSwi" "panLac mayone ----";
+  }
+}
+@media (min-width: 500px) and (min-width: 1024px) {
+  .productos {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "panHam panPan patyCl patyEx" "salSwi hamSwi panLac mayone";
+  }
+}
+.nosotros {
+  width: 100%;
+  background-image: url(../fondo.png);
+  background-color: rgb(192, 192, 192);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  align-items: center;
+}
+
+.nuestroVideo {
+  width: 80%;
+}
+
+.parrafoNosotros {
+  background-color: white;
+  font-weight: bold;
+  opacity: 0.65;
+  margin: 0 4rem;
+  border: 0.2rem solid rgba(127, 128, 145, 0.671);
+}
+
+.galeria {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 500px) {
+  .nosotros {
+    font-size: 1.6rem;
+  }
+  .galeria {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 500px) and (min-width: 768px) {
+  .tituloGaleria {
+    padding: 2rem 0rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 500px) and (min-width: 1024px) {
+  .parrafoNosotros {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 6rem;
+  background-image: url(../fondo.png);
+  background-repeat: unset;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(196, 196, 204);
+  font-weight: bold;
+}
+
+.tituloContacto {
+  font-size: 2.2rem;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.form-label {
+  font-size: 1.3rem;
+}
+
+.mapa {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .mainContacto {
+    flex-direction: row;
+  }
+  .formulario {
+    width: 100%;
+    padding: 2rem;
+    border-right: 0.3rem solid rgb(171, 163, 175);
+  }
+}
+footer {
+  width: 100%;
+  background-color: rgb(236, 151, 71);
+  text-align: center;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.atencion {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "open Sans", sans-serif;
+}
+
+.seguinos {
+  display: flex;
+  flex-direction: row;
+  align-items: inherit;
+}
+
+.redes {
+  padding: 0.5rem 1rem;
+}
+
+:hover.redes {
+  scale: 1.1;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-right: 5rem;
+  }
+  .atencion {
+    padding-right: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */

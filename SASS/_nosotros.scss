@@ -1,0 +1,49 @@
+.nosotros{
+    width: 100%;
+    background-image: url(../fondo.png);
+    background-color: rgb(192, 192, 192);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.nuestroVideo{
+    width: 80%;
+}
+
+.parrafoNosotros{
+    background-color: white;
+    font-weight: bold;
+    opacity: 0.65;
+    margin: 0 4rem;
+    border: 0.2rem solid rgba(127, 128, 145, 0.671);
+}
+.galeria{
+    width: 100%;
+    padding: 1rem;
+}
+
+@media(min-width:500px){
+    .nosotros{
+        font-size: 1.6rem;
+    }
+    .galeria{
+        font-size: 2rem;
+    }
+    @media(min-width:768px){
+        .tituloGaleria{
+            padding: 2rem 0rem;
+            font-weight: bold;
+        }
+    }
+    @media(min-width:1024px){
+        .parrafoNosotros{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+
+

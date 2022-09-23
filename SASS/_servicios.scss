@@ -1,0 +1,134 @@
+.servicios{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.castilloTobogan{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: castillo;
+}
+
+.metegol{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: metegol;
+}
+
+.pool{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: pool;
+}
+
+.inflable{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: inflable;
+}
+
+.camaElastica{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: cama;
+}
+
+.gacebo{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: gacebo;
+}
+
+.pinPon{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: pinPon;
+}
+
+.imagenServicios{
+    width: 100%;
+    align-items: center;
+}
+
+.parrafoServicios{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0rem;
+}
+
+@media(min-width:500px){
+
+    .servicios{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "castillo  metegol"
+        "pool  inflable"
+        "cama  gacebo"
+        "pinPon  ..";
+    }
+    @media(min-width:768px){
+        .servicios{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-areas:
+            "castillo metegol pool"
+            "inflable cama gacebo"
+            "pinPon .... ----";
+        }
+    
+    }
+    @media(min-width:1024px){
+        .servicios{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-areas:
+            "castillo metegol pool inflable"
+            "cama gacebo pinPon ...";
+        }
+    }
+}
+
+
+

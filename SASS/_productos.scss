@@ -1,0 +1,146 @@
+.productos{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.panHamburguesa{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: panHam;
+}
+
+.panPancho{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: panPan;
+}
+
+.patyClasico{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: patyCl;
+}
+
+.patyExpres{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: patyEx;
+}
+
+.salchichaSwift{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: salSwi;
+}
+
+.hamburguesaSwift{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: hamSwi;
+}
+
+.panLactal{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: panLac;
+}
+
+.mayonesa{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: mayone;
+}
+
+.imagenProductos{
+    width: 100%;
+    align-items: center;
+
+}
+
+.parrafoProductos{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0rem;
+}
+
+@media(min-width:500px){
+
+    .productos{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "panHam panPan"
+        "patyCl patyEx"
+        "salSwi hamSwi"
+        "panLac mayone";
+    }
+    @media(min-width:768px){
+        .productos{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-areas:
+            "panHam panPan patyCl"
+            "patyEx salSwi hamSwi"
+            "panLac mayone ----";
+        }
+    
+    }
+    @media(min-width:1024px){
+        .productos{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-areas:
+            "panHam panPan patyCl patyEx"
+            "salSwi hamSwi panLac mayone";
+        }
+    }
+}
+
+
+
